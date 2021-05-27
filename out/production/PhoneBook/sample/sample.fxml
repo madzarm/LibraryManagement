@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="350.0" style="-fx-background-color: #2E4053;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label fx:id="title" layoutX="18.0" layoutY="22.0" prefHeight="204.0" prefWidth="313.0" text="Library Management" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="48.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.5015873500279018" endY="0.6857142448425292" startX="0.441269892737979" startY="0.6000000363304502">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.03265107050538063" green="0.48541259765625" blue="0.8815789222717285" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.4931350114416476">
+                     <color>
+                        <Color red="0.13425925374031067" green="0.6165894865989685" blue="0.75" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.13425925374031067" green="0.6165894865989685" blue="0.75" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <TextField fx:id="usernameField" alignment="CENTER" layoutX="101.0" layoutY="246.0" promptText="Username" style="-fx-border-color: #3498DB;-fx-border-width: 0px 0px 3px 0px; -fx-background-radius: 10; -fx-border-radius: 7;" AnchorPane.topAnchor="246.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <PasswordField fx:id="passwordField" alignment="CENTER" layoutX="101.0" layoutY="311.0" promptText="Password" style="-fx-border-color: #3498DB;-fx-border-width: 0px 0px 3px 0px; -fx-background-radius: 10; -fx-border-radius: 7;" />
+      <Button fx:id="loginButton" defaultButton="true" layoutX="103.0" layoutY="450.0" mnemonicParsing="false" onAction="#onButtonClicked" style="-fx-background-radius: 30; -fx-background-color: #2E86C1; -fx-cursor: hand;" text="LOGIN" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="36.0" />
+         </font>
+      </Button>
+      <RadioButton fx:id="darkModeRadioButton" layoutX="18.0" layoutY="384.0" mnemonicParsing="false" onAction="#onRadioButtonClicked" selected="true" text="Dark mode" textFill="#f0eaea">
+         <toggleGroup>
+            <ToggleGroup fx:id="colorToggleGroup" />
+         </toggleGroup>
+         <font>
+            <Font size="15.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="lightModeRadioButton" layoutX="228.0" layoutY="384.0" mnemonicParsing="false" onAction="#onRadioButtonClicked" text="Light mode" textFill="#f3ecec" toggleGroup="$colorToggleGroup">
+         <font>
+            <Font size="15.0" />
+         </font></RadioButton>
+      <Button fx:id="closeButton" alignment="CENTER" layoutX="313.0" layoutY="24.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onButtonClicked" prefHeight="21.0" prefWidth="13.0" style="-fx-background-color: #2E4053; -fx-cursor: hand;" textAlignment="CENTER" textFill="#058ee6">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <graphic>
+            <Label alignment="TOP_LEFT" contentDisplay="TOP" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="15.0" text="X" textFill="#058ee6">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </graphic></Button>
+      <Hyperlink fx:id="myHyperlink" layoutX="56.0" layoutY="539.0" onAction="#onHyperlinkClicked" text="New user? Click here to create new account" />
+   </children>
+</AnchorPane>

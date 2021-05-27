@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="210.0" prefWidth="300.0" style="-fx-background-color: #2E4053;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DeleteBook">
+    <children>
+        <Label layoutX="40.0" layoutY="74.0" prefHeight="25.0" prefWidth="56.0" text="Book ID" textFill="#dce0e3" AnchorPane.topAnchor="74.0">
+            <font>
+                <Font size="16.0" />
+            </font></Label>
+        <Label layoutX="84.0" layoutY="14.0" text="Delete Book" textFill="#2285d6">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <TextField fx:id="bookIDTextField" layoutX="116.0" layoutY="149.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="74.0" />
+        <Button fx:id="deleteBookButton" layoutX="108.0" layoutY="170.0" mnemonicParsing="false" onAction="#onButtonClicked" text="Delete Book" AnchorPane.topAnchor="170.0" />
+        <Label fx:id="warningLabel1" alignment="CENTER" layoutX="50.0" layoutY="112.0" minWidth="200.0" text="No user with that ID" textFill="#2e4053">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="warningLabel2" alignment="CENTER" layoutX="50.0" layoutY="137.0" minWidth="200.0" text="No user with that ID" textFill="#2e4053">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

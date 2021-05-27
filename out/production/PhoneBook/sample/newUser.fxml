@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="350.0" style="-fx-background-color: #2E4053;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.NewUserController">
+    <children>
+    <Label fx:id="title" layoutX="18.0" layoutY="74.0" prefHeight="152.0" prefWidth="313.0" text="Library Management" textAlignment="CENTER" wrapText="true" AnchorPane.topAnchor="22.0">
+        <font>
+            <Font size="48.0" />
+        </font>
+        <textFill>
+            <LinearGradient endX="0.5015873500279018" endY="0.6857142448425292" startX="0.441269892737979" startY="0.6000000363304502">
+                <stops>
+                    <Stop>
+                        <color>
+                            <Color red="0.03265107050538063" green="0.48541259765625" blue="0.8815789222717285" />
+                        </color>
+                    </Stop>
+                    <Stop offset="0.4931350114416476">
+                        <color>
+                            <Color red="0.13425925374031067" green="0.6165894865989685" blue="0.75" />
+                        </color>
+                    </Stop>
+                    <Stop offset="1.0">
+                        <color>
+                            <Color red="0.13425925374031067" green="0.6165894865989685" blue="0.75" />
+                        </color>
+                    </Stop>
+                </stops>
+            </LinearGradient>
+        </textFill>
+    </Label>
+      <Label layoutX="54.0" layoutY="242.0" text="Name" textFill="#dde1e5" AnchorPane.leftAnchor="54.0" AnchorPane.topAnchor="210.0">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <TextField fx:id="nameTextField" alignment="CENTER" layoutX="141.0" layoutY="242.0" promptText="Enter your name" AnchorPane.leftAnchor="160.0" AnchorPane.topAnchor="210.0" />
+      <Label layoutX="25.0" layoutY="300.0" text="Email Address" textFill="#dce0e3" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="268.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="emailTextField" alignment="CENTER" layoutX="141.0" layoutY="300.0" promptText="Enter your Email address" AnchorPane.leftAnchor="160.0" AnchorPane.topAnchor="268.0" />
+      <Label layoutX="23.0" layoutY="358.0" text="New Password" textFill="#dde1e5" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="326.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="11.0" layoutY="416.0" text="Confirm Password" textFill="#dde1e5" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="384.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label><Button fx:id="createButton" layoutX="109.0" layoutY="437.0" mnemonicParsing="false" onAction="#onButtonPressed" style="-fx-background-radius: 30; -fx-background-color: #2E86C1; -fx-cursor: hand;" text="Create" textFill="WHITE" AnchorPane.leftAnchor="109.0" AnchorPane.topAnchor="437.0">
+            <font>
+                <Font name="Calibri Bold" size="32.0" />
+            </font>
+        </Button>
+      <Button fx:id="signInButton" layoutX="75.0" layoutY="552.0" minWidth="200.0" mnemonicParsing="false" onAction="#onButtonPressed" style="-fx-background-radius: 30; -fx-background-color: #5DADE2;" text="Sign in" textFill="WHITE" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="75.0">
+         <font>
+            <Font name="Calibri Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="72.0" layoutY="512.0" text="Already have an account?" textFill="#dde1e5" AnchorPane.leftAnchor="72.0" AnchorPane.topAnchor="512.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="firstPasswordField" alignment="CENTER" layoutX="160.0" layoutY="326.0" promptText="Enter your password" AnchorPane.leftAnchor="160.0" AnchorPane.topAnchor="326.0" />
+      <PasswordField fx:id="secondPasswordField" alignment="CENTER" layoutX="160.0" layoutY="384.0" promptText="Enter your password" AnchorPane.leftAnchor="160.0" AnchorPane.topAnchor="384.0" />
+      <Label fx:id="passLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="159.0" layoutY="359.0" minWidth="150.0" textFill="#b91616" />
+    </children>
+</AnchorPane>

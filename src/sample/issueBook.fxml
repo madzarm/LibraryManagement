@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="350.0" prefWidth="300.0" style="-fx-background-color: #2E4053;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.IssueBook">
+   <children>
+      <Label layoutX="47.0" layoutY="74.0" text="User ID" textFill="#dce0e3" AnchorPane.topAnchor="74.0">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="82.0" layoutY="14.0" text="Issue A Book" textFill="#2285d6">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="137.0" text="Book ID" textFill="#dce0e3" AnchorPane.topAnchor="134.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="237.0" text="Return Date" textFill="#dce0e3" AnchorPane.topAnchor="194.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="datePicker" editable="false" layoutX="136.0" layoutY="224.0" maxWidth="150.0" minWidth="50.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="194.0" />
+      <TextField fx:id="bookIDTextField" layoutX="116.0" layoutY="74.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="134.0" />
+      <TextField fx:id="userIDTextField" layoutX="116.0" layoutY="149.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="74.0" />
+      <Button fx:id="issueButton" layoutX="124.0" layoutY="291.0" mnemonicParsing="false" onAction="#onButtonClicked" text="Button" AnchorPane.topAnchor="291.0" />
+      <Label fx:id="warningLabel1" alignment="CENTER" layoutX="50.0" layoutY="233.0" minWidth="200.0" text="No user with that ID" textFill="#2e4053">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="warningLabel2" alignment="CENTER" layoutX="50.0" layoutY="258.0" minWidth="200.0" text="No user with that ID" textFill="#2e4053">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
